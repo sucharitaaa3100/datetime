@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 📅 Recurring Date Picker Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal, user-friendly React component that lets users create and preview **recurring dates** — similar to how apps like **TickTick** or **Google Calendar** handle repeat tasks or events.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- 🌀 **Recurrence Types**: Daily, Weekly, Monthly, Yearly
+- ⚙️ **Customization**:
+  - Every X days/weeks/months/years
+  - Choose specific days (like Mon/Wed/Fri)
+  - Monthly patterns like "Second Friday of every month"
+- 📅 **Date Range**: Set start and optional end date
+- 👀 **Live Preview**: Mini-calendar preview of upcoming recurring dates
+- 💨 **Smooth UX**: Includes subtle animations using Framer Motion
+- 🧠 **Modular & Clean Code**: Built with reusable React components and context
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Tech Stack
 
-### `npm test`
+- ⚛️ **React** (with Create React App)
+- 🎨 **Bootstrap** & Bootstrap Icons for styling
+- 🧠 **React Context API** for state
+- 🗓 **date-fns** for date calculations
+- 🎞 **Framer Motion** for subtle animations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📸 Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1343" height="617" alt="Screenshot 2025-07-20 222811" src="https://github.com/user-attachments/assets/87d3bc04-4a58-4770-abff-356fe2d3a41a" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Live Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Try it live in a cloud IDE:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Getting Started (Run Locally)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone the repo
+cd datepicker
+npm install
+npm start
 
-### Code Splitting
+💡 How It Works
+Choose a recurrence type: daily, weekly, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Customize it: interval, days of week, or patterns like “last Monday”
 
-### Analyzing the Bundle Size
+Pick a start and (optional) end date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🎉 Preview the upcoming recurring dates instantly in a calendar-like format
 
-### Making a Progressive Web App
+Example: “Repeat every 2 weeks on Monday & Thursday, starting July 1st”
+→ You’ll instantly see the next 20 dates following that pattern
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📁 Project Structure
+bash
+Copy
+Edit
+src/
+├── components/          # All UI parts (RecurrenceOptions, CalendarPreview, etc.)
+├── context/             # Global recurrence state using React Context
+├── utils/               # Date generation logic using date-fns
+├── tests/               # Unit and integration tests (optional)
+├── App.js               # Root component
+└── index.js             # Entry point
+📽 Loom Video Walkthrough
+🎥 Watch the Video Demo
 
-### Advanced Configuration
+Covers:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Functionality in action
 
-### Deployment
+Thought process and code walkthrough
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+My face explaining it :)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙌 Author
+Made with care by Sucharita
